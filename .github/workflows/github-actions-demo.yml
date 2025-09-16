@@ -2,9 +2,10 @@ name: Github actions demo
 on: [push]
 jobs:
   Explore-Github-actions:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "hello"
       - name: list
         run: |
+          echo $PATH
           ls ${{ github.workspace }}

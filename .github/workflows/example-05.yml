@@ -1,0 +1,23 @@
+name: example05
+on: [push]
+jobs:
+#sequentail jobs
+    Test1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "HEllo ${{ github.event_name }}"
+    Test2:
+        runs-on: ubuntu-latest
+        needs: Test1
+        steps:
+            - run: echo "Hello ${{ github.event_name }}"
+    Test3:
+        runs-on: ubuntu-latest
+        needs: Test2
+        steps:
+            - run: echo "Hello ${{ github.event_name }}"
+    Test4:
+        runs-on: ubuntu-latest
+        needs: ["Test2","Test3"]
+        steps:
+            - run: echo "Hello ${{ github.event_name }}"

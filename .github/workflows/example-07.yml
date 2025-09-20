@@ -7,5 +7,5 @@ jobs:
         steps: 
             - run: |
                 # echo "::error intentional error::Missing semi colon"
-                exit 1
-                echo "$GITHUB_STEP_SUMMARY"
+                # exit 1
+                echo HELLO-Work >> "$GITHUB_STEP_SUMMARY"

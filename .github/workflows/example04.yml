@@ -1,0 +1,14 @@
+name: example04
+on: [push]
+jobs:
+#parallel jobs
+    Test1: 
+        runs-on: ubuntu-latest
+        steps:
+            - run: "The job was automcatilly ${{ github.event_name }} "
+    Test2: 
+        runs-on: ubuntu-latest
+        steps:
+            - run: "The job was automcatilly ${{ github.event_name }}"   
+    Test3:
+        runs-on:  

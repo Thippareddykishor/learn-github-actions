@@ -4,5 +4,7 @@ on: [push]
 jobs:
     Test1:
         runs-on: ubuntu-latest
-        steps:
-            - run: echo "::error intentional error::Missing semi colon"
+        steps: 
+            - run: |
+                echo "::error intentional error::Missing semi colon"
+                exit 1

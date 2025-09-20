@@ -11,4 +11,6 @@ jobs:
         steps:
             - run: "The job was automcatilly ${{ github.event_name }}"   
     Test3:
-        runs-on:  
+        runs-on:  ubuntu-latest
+        steps:
+            - run: "The job was automactilaly ${{ github.event_name }}"

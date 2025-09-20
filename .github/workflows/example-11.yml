@@ -6,8 +6,16 @@ jobs:
       steps:
         - run: touch new.txt
         - run: ls -l
-
+        - name: upload test file
+          uses: actions/upload-artifact@v4
+          with:
+            name: files
+            path: new.txt
     stage2: 
       runs-on: ubuntu-latest
       steps:
+        - name: download files 
+          uses: actions/download-arfact@v4
+          with:
+            name: files
         - run: ls -l

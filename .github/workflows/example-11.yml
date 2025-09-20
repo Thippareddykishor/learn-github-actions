@@ -15,7 +15,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: download files 
-          uses: actions/download-arfact@v4
+          uses: actions/download-artifact@v4
           with:
             name: files
         - run: ls -l

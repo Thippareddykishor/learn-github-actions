@@ -8,4 +8,4 @@ jobs:
             - run: |
                 # echo "::error intentional error::Missing semi colon"
                 exit 1
-                echo "::summary 100 resources created::Missing semi colon"
+                echo "$GITHUB_STEP_SUMMARY"

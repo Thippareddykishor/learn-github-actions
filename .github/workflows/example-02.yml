@@ -11,6 +11,19 @@ on:
                     - info
                     - warning
                     - debug
+            print_tags:
+                description: 'True or Flase'
+                required: true
+                type: boolean
+            tags:
+                description: 'Test tags'
+                required: true
+                type: string
+            env:
+                description: 'Env to run against'
+                type: environment
+                required: true
+
 jobs:
     explore-jobs:
         runs-on: ubuntu-latest

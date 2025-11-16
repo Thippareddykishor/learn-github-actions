@@ -21,7 +21,7 @@ on:
                 type: string
             env:
                 description: 'Env to run against'
-                type: environment
+                type: environment 
                 required: true
 
 jobs:

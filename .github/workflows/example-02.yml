@@ -1,6 +1,6 @@
 name: example02
 on:
-    workflow_dispatch
+    workflow_dispatch:
         inputs:
             loglevel:
                 description: 'Log level'

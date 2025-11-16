@@ -1,0 +1,10 @@
+name: Test Project
+on: push
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: get code
+              run: echo "shell command that's define you"
+            - name: uses keyword
+              run: echo "dont use run command for action use uses keyword"

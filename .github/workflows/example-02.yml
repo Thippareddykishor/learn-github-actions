@@ -23,7 +23,6 @@ on:
                 description: 'Env to run against'
                 type: environment 
                 required: true
-
 jobs:
     explore-jobs:
         runs-on: ubuntu-latest

@@ -28,4 +28,4 @@ jobs:
     explore-jobs:
         runs-on: ubuntu-latest
         steps:
-            - run: "The job was ${{ github.event_name }}"
+            - run: "The job$ ${{inputs.tags}} ${{ inputs.env }} ${{inputs.loglevel}} ${{inputs.print_tags}}"

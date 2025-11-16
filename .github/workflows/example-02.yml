@@ -27,4 +27,4 @@ jobs:
     explore-jobs:
         runs-on: ubuntu-latest
         steps:
-            - run: "The job$ ${{inputs.tags}} ${{ inputs.env }} ${{inputs.loglevel}} ${{inputs.print_tags}}"
+            - run: echo "The job$ ${{inputs.tags}} ${{ inputs.env }} ${{inputs.loglevel}} ${{inputs.print_tags}}"

@@ -1,6 +1,6 @@
 #fail pipeline
 name: example07
-on: [push]
+on: [workflow_dispatch]
 jobs:
     Test1:
         runs-on: ubuntu-latest

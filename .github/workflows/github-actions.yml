@@ -1,4 +1,4 @@
-name: Github actions demo
+name: Github actions Nov 16
 run-name: ${{ github.actor }}
 on: [push]
 jobs:

@@ -1,5 +1,5 @@
 name: example04
-on: [push]
+on: [workflow_dispatch]
 jobs:
 #parallel jobs
     Test1: 

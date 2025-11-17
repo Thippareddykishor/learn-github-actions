@@ -1,0 +1,12 @@
+name: example8a
+on:
+    workflow_dispatch
+jobs:
+    Test1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: failing step
+              id: demo
+              run: exit 1
+            - name: The demo step has failed
+              if: ${{failure() && steps.demo.conclusion == 'failure' }}

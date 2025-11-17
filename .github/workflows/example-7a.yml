@@ -6,5 +6,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: |
+                echo "timestamp=$VALUE" >> $GITHUB_OUTPUT
                 echo "error=Intentional Error Missing semicolon" >> $GITHUB_OUTPUT
                 exit 1

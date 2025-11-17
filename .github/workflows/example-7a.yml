@@ -8,3 +8,4 @@ jobs:
             - run: |
                 # exit 1
                 echo Intentional >> $GITHUB_STEP_SUMMARY
+                echo "Test=test" >> $GITHUB_OUTPUT

@@ -7,4 +7,4 @@ jobs:
         steps:
             - run: |
                 exit 1
-                echo "error=Intentional" >> $GITHUB_OUTPUT
+                echo "error=Intentional" >> $GITHUB_STEP_SUMMARY

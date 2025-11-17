@@ -5,3 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - run: echo one common task
+    Test2:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "test"
